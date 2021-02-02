@@ -238,3 +238,67 @@ while offset != 0 :
     else : 
       offset = offset + 1    
     print(offset)
+
+
+# Loops over a list
+# areas list
+areas = [11.25, 18.0, 20.0, 10.75, 9.50]
+
+# Code the for loop
+As an example, have a look at how the for loop from the video was converted:
+
+fam = [1.73, 1.68, 1.71, 1.89]
+for index, height in enumerate(fam) :
+    print("person " + str(index) + ": " + str(height))
+Instructions
+Adapt the for loop in the sample code to use enumerate() and use two iterator variables.
+Update the print() statement so that on each run, a line of the form "room x: y" should be printed, where x is the index of the list element and y is the actual list element, i.e. the area. Make sure to print out this exact string, with the correct spacing.
+
+# areas list
+areas = [11.25, 18.0, 20.0, 10.75, 9.50]
+
+# Change for loop to use enumerate() and update print()
+for index, a in enumerate(areas) :
+    print("room" + str(index) + ":" + str(a))
+
+
+
+# house list of lists
+house = [["hallway", 11.25], 
+         ["kitchen", 18.0], 
+         ["living room", 20.0], 
+         ["bedroom", 10.75], 
+         ["bathroom", 9.50]]
+         
+# Build a for loop from scratch
+for room, area in house :
+    print("the " + str(room) + " is " + str(area)  + " sqm")
+
+
+# Definition of dictionary
+europe = {'spain':'madrid', 'france':'paris', 'germany':'berlin',
+          'norway':'oslo', 'italy':'rome', 'poland':'warsaw', 'austria':'vienna' }
+          
+# Iterate over europe
+for k, v in europe.items() :
+    print("the capital of " + str(k) + "is " + str(v))
+
+
+
+
+
+
+
+
+
+
+# Import numpy as np
+import numpy as np
+
+# For loop over np_height
+for x in np_height :
+    print(str(x) + " inches")
+
+# For loop over np_baseball that visits every element of np_baseball
+for y in np.nditer(np_baseball) :
+    print(y)
