@@ -1,0 +1,9 @@
+avocados_dict = {
+  "date": ["2019-11-17","2019-12-01"],
+  "small_sold":[10859987, 9291631],
+  "large_sold":[7674135, 6238096],
+  }
+  
+  avocados_2019 = pd.DataFrame(avocados_dict)
+  
+  print(avocados_2019)
